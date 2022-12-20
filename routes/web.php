@@ -21,3 +21,6 @@ Route::get('/', function () {
 
 Route::get('/usuarios', [UserController::class, 'index'])->name('usuarios.index');
 
+Route::get('/usuarios/{id}', [UserController::class, 'borrar'])->name('usuarios.borrar');
+
+
